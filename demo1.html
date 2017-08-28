@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>VRSavvy</title>
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+
+</head>
+
+<body>
+   
+
+
+
+    <div id="ascene">
+        <a-scene>
+            <a-entity position="700 0 5">
+                <a-camera></a-camera>
+            </a-entity>
+
+
+            <a-assets>
+                <a-asset-item  id="tree" src="praestantia collada.dae"></a-asset-item>
+            </a-assets>
+            <!-- Using the asset management system. -->
+            <a-collada-model position="0 0 -150" src="#tree"></a-collada-model>
+
+            <a-sky material="opacity: 0"></a-sky>
+        </a-scene>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>VRSavvy</title>
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+
+</head>
+
+<body>
+   
+
+
+
+    <div id="ascene">
+        <a-scene>
+            <a-entity position="0 0 5">
+                <a-camera></a-camera>
+            </a-entity>
+
+ <a-assets>
+            <a-asset-item id="tree-obj" src="planet.obj"></a-asset-item>
+            <a-asset-item id="tree-mtl" src="planet.mtl"></a-asset-item>
+        </a-assets>
+        <a-entity  position="-1 0.5 -4" rotation="45 45 45"  obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
+   
+
+           
+           
+            <a-sky background="skybg.jpg"></a-sky>
+        </a-scene>
+    </div>
+</body>
+
+</html>
